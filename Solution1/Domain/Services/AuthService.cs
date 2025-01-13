@@ -9,17 +9,18 @@ using Support.Models;
 
 namespace Domain.Services;
 
-public class AuthService(IUnitOfWork unitOfWork, AppDbContext context, ITokenService tokenService, IHashingService hashingService ) : BaseRepository<User>(context), IAuthService
+public class AuthService(IUnitOfWork unitOfWork, AppDbContext context, ITokenService tokenService, IHashingService hashingService , IBusinessRulesValidator businessRulesValidator) : BaseRepository<User>(context), IAuthService
 {
     public async Task<bool> SignUp(string username, string password)
     {
+        
         var user = new User
         {
             Username = username,
             Password = hashingService.HashPassword(password),
             RoleId = 2
         };
-
+        businessRulesValidator.Validate(user);
         await AddAsync(user);
         await unitOfWork.CompleteAsync();
         return true;

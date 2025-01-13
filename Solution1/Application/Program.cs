@@ -84,6 +84,7 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IHashingService, HashingService>();
 builder.Services.AddScoped<ISeedRolesService, SeedRolesService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IBusinessRulesValidator, BusinessRulesValidator>();
 builder.Services.AddAutoMapper(typeof(ModelToResponse), typeof(RequestToModel));
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer();
