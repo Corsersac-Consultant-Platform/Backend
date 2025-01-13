@@ -5,5 +5,5 @@ namespace Domain.Interfaces;
 
 public interface IRoleService : IBaseRepository<Role>
 {
-    
+    Task<Role?> GetRoleByType(string type);
 }

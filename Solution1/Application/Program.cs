@@ -1,5 +1,6 @@
 using Domain.Interfaces;
 using Domain.Services;
+using Domain.Validators;
 using Infrastructure.Persistence.EFC;
 using Infrastructure.Persistence.EFC.Repositories;
 using Infrastructure.Persistence.EFC.UnitOfWork;
@@ -84,6 +85,9 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IHashingService, HashingService>();
 builder.Services.AddScoped<ISeedRolesService, SeedRolesService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IStatusService, StatusService>();
+builder.Services.AddScoped<ISeedStatuesService, SeedStatuesService>();
+builder.Services.AddScoped<IInvoiceService, InvoiceService>();
 builder.Services.AddScoped<IBusinessRulesValidator, BusinessRulesValidator>();
 builder.Services.AddAutoMapper(typeof(ModelToResponse), typeof(RequestToModel));
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -96,7 +100,9 @@ using (var scope = app.Services.CreateScope())
     var context = services.GetRequiredService<AppDbContext>();
     context.Database.EnsureCreated();
     var seedRolesService = services.GetRequiredService<ISeedRolesService>();
+    var seedStatuesService = services.GetRequiredService<ISeedStatuesService>();
     await seedRolesService.SeedRoles();
+    await seedStatuesService.SeedStatues();
 }
 
 

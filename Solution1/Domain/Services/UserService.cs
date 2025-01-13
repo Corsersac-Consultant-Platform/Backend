@@ -3,13 +3,14 @@ using Domain.Interfaces;
 using Infrastructure.Persistence.EFC;
 using Infrastructure.Persistence.EFC.Repositories;
 using Infrastructure.Persistence.EFC.UnitOfWork;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Security.Interfaces;
 using Support.Models;
 
 namespace Domain.Services;
 
-public class UserService(IUnitOfWork unitOfWork, AppDbContext context, IHashingService hashingService) : BaseRepository<User>(context), IUserService
+public class UserService(IUnitOfWork unitOfWork, AppDbContext context, IHashingService hashingService, IBusinessRulesValidator businessRulesValidator) : BaseRepository<User>(context), IUserService
 {
     private readonly AppDbContext _context = context;
 
@@ -20,6 +21,7 @@ public class UserService(IUnitOfWork unitOfWork, AppDbContext context, IHashingS
         {
             throw new UserNotFoundException();
         }
+        businessRulesValidator.Validate(password);
         var newPassword = hashingService.HashPassword(password);
         userToUpdate.UpdatePassword(newPassword);
         await unitOfWork.CompleteAsync();

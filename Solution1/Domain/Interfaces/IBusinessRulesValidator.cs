@@ -4,5 +4,6 @@ namespace Domain.Interfaces;
 
 public interface IBusinessRulesValidator
 {
-    void Validate(User user);
+    void Validate(string password);
+    void Validate(Invoice invoice);
 }

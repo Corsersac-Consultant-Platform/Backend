@@ -13,14 +13,13 @@ public class AuthService(IUnitOfWork unitOfWork, AppDbContext context, ITokenSer
 {
     public async Task<bool> SignUp(string username, string password)
     {
-        
+        businessRulesValidator.Validate(password);
         var user = new User
         {
             Username = username,
             Password = hashingService.HashPassword(password),
             RoleId = 2
         };
-        businessRulesValidator.Validate(user);
         await AddAsync(user);
         await unitOfWork.CompleteAsync();
         return true;
