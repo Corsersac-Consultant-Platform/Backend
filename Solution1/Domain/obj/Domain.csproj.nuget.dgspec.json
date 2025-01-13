@@ -1,0 +1,277 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Domain/Domain.csproj": {}
+  },
+  "projects": {
+    "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Domain/Domain.csproj",
+        "packagesPath": "/Users/lordmathi2741/.nuget/packages/",
+        "outputPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lordmathi2741/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/Infrastructure.csproj"
+              },
+              "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Security/Security.csproj": {
+                "projectPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Security/Security.csproj"
+              },
+              "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Support/Support.csproj": {
+                "projectPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Support/Support.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/lordmathi2741/.nuget/packages/",
+        "outputPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lordmathi2741/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Support/Support.csproj": {
+                "projectPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Support/Support.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Security/Security.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Security/Security.csproj",
+        "projectName": "Security",
+        "projectPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Security/Security.csproj",
+        "packagesPath": "/Users/lordmathi2741/.nuget/packages/",
+        "outputPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Security/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lordmathi2741/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/Infrastructure.csproj"
+              },
+              "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Support/Support.csproj": {
+                "projectPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Support/Support.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net": {
+              "target": "Package",
+              "version": "[0.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Support/Support.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Support/Support.csproj",
+        "projectName": "Support",
+        "projectPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Support/Support.csproj",
+        "packagesPath": "/Users/lordmathi2741/.nuget/packages/",
+        "outputPath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Support/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lordmathi2741/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

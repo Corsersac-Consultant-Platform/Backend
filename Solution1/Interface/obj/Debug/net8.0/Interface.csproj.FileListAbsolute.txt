@@ -1,0 +1,15 @@
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/bin/Debug/net8.0/Interface.deps.json
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/bin/Debug/net8.0/Interface.dll
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/bin/Debug/net8.0/Interface.pdb
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/bin/Debug/net8.0/Support.dll
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/bin/Debug/net8.0/Support.pdb
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/Interface.csproj.AssemblyReference.cache
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/Interface.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/Interface.AssemblyInfoInputs.cache
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/Interface.AssemblyInfo.cs
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/Interface.csproj.CoreCompileInputs.cache
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/Interface.csproj.CopyComplete
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/Interface.dll
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/refint/Interface.dll
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/Interface.pdb
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/ref/Interface.dll

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "GjBP6JC8G9E=",
+  "success": true,
+  "projectFilePath": "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/Interface.csproj",
+  "expectedPackageFiles": [
+    "/Users/lordmathi2741/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/lordmathi2741/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/lordmathi2741/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/lordmathi2741/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/Users/lordmathi2741/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

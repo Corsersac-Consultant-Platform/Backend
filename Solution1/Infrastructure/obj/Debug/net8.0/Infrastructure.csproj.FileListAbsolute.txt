@@ -1,0 +1,15 @@
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/bin/Debug/net8.0/Infrastructure.deps.json
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/bin/Debug/net8.0/Infrastructure.dll
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/bin/Debug/net8.0/Infrastructure.pdb
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/bin/Debug/net8.0/Support.dll
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/bin/Debug/net8.0/Support.pdb
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.AssemblyReference.cache
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfoInputs.cache
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfo.cs
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.CoreCompileInputs.cache
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.CopyComplete
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/Infrastructure.dll
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/refint/Infrastructure.dll
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll
