@@ -13,3 +13,4 @@
 /Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/refint/Interface.dll
 /Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/Interface.pdb
 /Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/ref/Interface.dll
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Interface/obj/Debug/net8.0/Interface.sourcelink.json

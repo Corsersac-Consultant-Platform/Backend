@@ -36,4 +36,21 @@ public class AuthService(IUnitOfWork unitOfWork, AppDbContext context, ITokenSer
         var role = await context.Set<Role>().FirstOrDefaultAsync(x => x.Id == user.RoleId);
         return tokenService.GenerateToken(user, role);
     }
+
+    public async Task<string> RefreshToken(string token)
+    {
+        var userId = await tokenService.ValidateToken(token);
+        if (userId == null)
+        {
+            throw new InvalidCredentialsException();
+        }
+
+        var user = await context.Set<User>().FirstOrDefaultAsync(x => x.Id == userId);
+        if (user == null)
+        {
+            throw new UserNotFoundException();
+        }
+        var role = await context.Set<Role>().FirstOrDefaultAsync(x => x.Id == user.RoleId);
+        return tokenService.GenerateToken(user, role);
+    }
 }

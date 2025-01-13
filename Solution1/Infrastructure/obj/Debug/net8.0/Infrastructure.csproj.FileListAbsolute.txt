@@ -13,3 +13,4 @@
 /Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/refint/Infrastructure.dll
 /Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
 /Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Infrastructure/obj/Debug/net8.0/Infrastructure.sourcelink.json

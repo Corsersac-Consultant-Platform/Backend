@@ -58,4 +58,9 @@ public class TokenService(IConfiguration configuration) : ITokenService
             return null;
         }
     }
+
+    public string RefreshToken(User user, Role role)
+    {
+        return GenerateToken(user, role);
+    }
 }

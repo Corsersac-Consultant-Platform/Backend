@@ -6,4 +6,5 @@ public interface ITokenService
 {
     string GenerateToken(User user, Role role);
     Task<int?> ValidateToken(string token);
+    string RefreshToken(User user, Role role);
 }
