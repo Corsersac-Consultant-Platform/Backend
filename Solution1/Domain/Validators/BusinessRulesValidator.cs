@@ -1,7 +1,6 @@
 using System.Text.RegularExpressions;
 using Domain.Exceptions;
 using Domain.Interfaces;
-using Security.Interfaces;
 using Support.Models;
 
 namespace Domain.Validators;

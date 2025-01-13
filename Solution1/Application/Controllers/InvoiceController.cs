@@ -15,7 +15,7 @@ namespace Application.Controllers;
 public class InvoiceController(IMapper mapper, IInvoiceService invoiceService) : ControllerBase
 {
     [HttpPost]
-    [CustomAuthorize("ADMIN, TESTER")]
+    [CustomAuthorize("ADMIN", "TESTER")]
     public async Task<IActionResult> CreateInvoice([FromBody] InvoiceRequestDTO invoiceRequest)
     {
         var invoice = mapper.Map<InvoiceRequestDTO, Invoice>(invoiceRequest);
@@ -32,7 +32,7 @@ public class InvoiceController(IMapper mapper, IInvoiceService invoiceService) :
     }
     
     [HttpGet("range")]
-    [CustomAuthorize("ADMIN, TESTER", "DEFAULT")]
+    [CustomAuthorize("ADMIN", "TESTER", "DEFAULT")]
     public async Task<IActionResult> GetInvoicesByRange([FromQuery] DateTime start, [FromQuery] DateTime end)
     {
         var invoices = await invoiceService.GetInvoicesByRange(start, end);
@@ -41,7 +41,7 @@ public class InvoiceController(IMapper mapper, IInvoiceService invoiceService) :
     }
     
     [HttpGet("date")]
-    [CustomAuthorize("ADMIN, TESTER", "DEFAULT")]
+    [CustomAuthorize("ADMIN", "TESTER", "DEFAULT")]
     public async Task<IActionResult> GetInvoicesByDate([FromQuery] DateTime date)
     {
         var invoices = await invoiceService.GetInvoicesByDate(date);
@@ -50,7 +50,7 @@ public class InvoiceController(IMapper mapper, IInvoiceService invoiceService) :
     }
     
     [HttpGet("serie")]
-    [CustomAuthorize("ADMIN, TESTER", "DEFAULT")]
+    [CustomAuthorize("ADMIN","TESTER", "DEFAULT")]
     public async Task<IActionResult> GetInvoicesBySerie([FromQuery] string serie)
     {
         var invoices = await invoiceService.GetInvoicesBySerie(serie);
