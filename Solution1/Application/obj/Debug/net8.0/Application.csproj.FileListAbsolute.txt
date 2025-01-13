@@ -83,3 +83,4 @@
 /Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Application/obj/Debug/net8.0/Application.pdb
 /Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Application/obj/Debug/net8.0/Application.genruntimeconfig.cache
 /Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Application/obj/Debug/net8.0/ref/Application.dll
+/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Application/obj/Debug/net8.0/Application.sourcelink.json
