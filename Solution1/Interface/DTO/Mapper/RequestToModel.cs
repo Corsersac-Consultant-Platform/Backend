@@ -10,5 +10,6 @@ public class RequestToModel : Profile
     {
         CreateMap<UserRequestDTO, User>();
         CreateMap<InvoiceRequestDTO, Invoice>();
+        CreateMap<UsageRequestDTO, Usage>();
     }
 }

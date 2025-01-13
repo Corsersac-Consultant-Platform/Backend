@@ -40,5 +40,17 @@ public class BusinessRulesValidator : IBusinessRulesValidator
             throw new Exception("Amount must be greater than 0");
         }
     }
+
+    public void Validate(Usage usage)
+    {
+        if (usage.Date.Year > _today.Year && usage.Date.Month > _today.Month &&
+            usage.Date.Day > _today.Day)
+            throw new InvalidUsageDateException("Usage cannot be in the future");
+
+        if (usage.Quantity <= 0)
+        {
+            throw new Exception("Quantity must be greater than 0");
+        }
+    }
 }
     

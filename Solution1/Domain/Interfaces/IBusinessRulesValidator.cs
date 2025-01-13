@@ -6,4 +6,6 @@ public interface IBusinessRulesValidator
 {
     void Validate(string password);
     void Validate(Invoice invoice);
+
+    void Validate(Usage usage);
 }

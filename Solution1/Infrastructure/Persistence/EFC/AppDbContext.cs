@@ -45,6 +45,16 @@ public class AppDbContext(DbContextOptions<AppDbContext>options)  : DbContext(op
       modelBuilder.Entity<Invoice>().Property(x => x.Serie).IsRequired().HasColumnName("serie");
         modelBuilder.Entity<Invoice>().Property(x => x.StatusId).IsRequired().HasColumnName("status_id");
       modelBuilder.Entity<Invoice>().HasOne<Status>().WithMany().HasForeignKey(x => x.StatusId);
+      
+        modelBuilder.Entity<Usage>().ToTable("usages");
+        modelBuilder.Entity<Usage>().HasKey(x => x.Id);
+        modelBuilder.Entity<Usage>().Property(x => x.Id).ValueGeneratedOnAdd().HasColumnName("id");
+        modelBuilder.Entity<Usage>().Property(x => x.Date).IsRequired().HasColumnName("date");
+        modelBuilder.Entity<Usage>().Property(x => x.Quantity).IsRequired().HasColumnName("quantity");
+        modelBuilder.Entity<Usage>().Property(x => x.UsageCenter).IsRequired().HasColumnName("usage_center");
+        modelBuilder.Entity<Usage>().Property(x => x.Product).IsRequired().HasColumnName("product");
+        modelBuilder.Entity<Usage>().Property(x => x.VehicleIdentifier).IsRequired().HasColumnName("vehicle_identifier");
+        
 
     }
 }

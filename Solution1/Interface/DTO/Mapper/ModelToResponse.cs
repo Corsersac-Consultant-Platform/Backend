@@ -10,5 +10,6 @@ public class ModelToResponse : Profile
     {
         CreateMap<User, UserResponseDTO>();
         CreateMap<Invoice, InvoiceResponseDTO>();
+        CreateMap<Usage, UsageResponseDTO>();
     }
 }

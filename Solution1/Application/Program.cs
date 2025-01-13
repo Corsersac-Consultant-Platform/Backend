@@ -89,6 +89,7 @@ builder.Services.AddScoped<IStatusService, StatusService>();
 builder.Services.AddScoped<ISeedStatuesService, SeedStatuesService>();
 builder.Services.AddScoped<IInvoiceService, InvoiceService>();
 builder.Services.AddScoped<IBusinessRulesValidator, BusinessRulesValidator>();
+builder.Services.AddScoped<IUsageService, UsageService>();
 builder.Services.AddAutoMapper(typeof(ModelToResponse), typeof(RequestToModel));
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer();
