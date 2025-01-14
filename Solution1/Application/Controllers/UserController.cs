@@ -44,4 +44,13 @@ public class UserController(IUserService userService, IMapper mapper) : Controll
         return Ok("Password updated successfully");
     }
     
+    [HttpGet("username")]
+    [CustomAuthorize("ADMIN", "TESTER", "DEFAULT")]
+    public async Task<IActionResult> GetUserIdByUsername([FromQuery] string username)
+    {
+        var id = await userService.GetUserIdByUsername(username);
+        return Ok(id);
+    }
+        
+    
 }

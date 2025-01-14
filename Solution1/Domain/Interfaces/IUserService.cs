@@ -6,4 +6,5 @@ namespace Domain.Interfaces;
 public interface IUserService : IBaseRepository<User>
 {
     Task UpdatePassword(int id, string password);
+    Task<int> GetUserIdByUsername(string username);
 }

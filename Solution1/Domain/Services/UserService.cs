@@ -26,4 +26,14 @@ public class UserService(IUnitOfWork unitOfWork, AppDbContext context, IHashingS
         userToUpdate.UpdatePassword(newPassword);
         await unitOfWork.CompleteAsync();
     }
+
+    public async Task<int> GetUserIdByUsername(string username)
+    {
+        var user = await _context.Set<User>().FirstOrDefaultAsync(user => user.Username == username);
+        if (user == null)
+        {
+            throw new UserNotFoundException();
+        }
+        return user.Id;
+    }
 }

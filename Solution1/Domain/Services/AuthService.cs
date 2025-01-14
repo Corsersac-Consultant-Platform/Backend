@@ -14,6 +14,11 @@ public class AuthService(IUnitOfWork unitOfWork, AppDbContext context, ITokenSer
     public async Task<bool> SignUp(string username, string password)
     {
         businessRulesValidator.Validate(password);
+        var userExists = await context.Set<User>().AnyAsync(x => x.Username == username);
+        if (userExists)
+        {
+            throw new UserAlreadyExistsException();
+        }
         var user = new User
         {
             Username = username,
