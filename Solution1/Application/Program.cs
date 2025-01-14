@@ -1,3 +1,6 @@
+
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using Domain.Interfaces;
 using Domain.Services;
 using Domain.Validators;
@@ -5,12 +8,12 @@ using Infrastructure.Persistence.EFC;
 using Infrastructure.Persistence.EFC.Repositories;
 using Infrastructure.Persistence.EFC.UnitOfWork;
 using Interface.DTO.Mapper;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Security.Interfaces;
 using Security.Services;
+using Support.Utils;
 using AuthenticationMiddleware = Application.Middleware.AuthenticationMiddleware;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +28,17 @@ builder.Services.AddCors(options =>
                 .AllowCredentials();
         });
 });
+
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+    options.JsonSerializerOptions.WriteIndented = true;
+    
+    
+    options.JsonSerializerOptions.Converters.Add(new DateTimeConverter());
+});
+
+
 
 var configuration = new ConfigurationBuilder()
     .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
@@ -53,7 +67,6 @@ builder.Services.AddDbContext<AppDbContext>(dbOptions =>
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {

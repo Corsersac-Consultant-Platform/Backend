@@ -37,7 +37,7 @@ public class UserController(IUserService userService, IMapper mapper) : Controll
     }
     
     [HttpPatch("update-password/{id}")]
-    [CustomAuthorize("ADMIN", "TESTER", "DEFAULT")]
+    [AllowAnonymous]
     public async Task<IActionResult> UpdatePassword(int id, [FromBody] string password)
     {
         await userService.UpdatePassword(id, password);
@@ -45,7 +45,7 @@ public class UserController(IUserService userService, IMapper mapper) : Controll
     }
     
     [HttpGet("username")]
-    [CustomAuthorize("ADMIN", "TESTER", "DEFAULT")]
+    [AllowAnonymous]
     public async Task<IActionResult> GetUserIdByUsername([FromQuery] string username)
     {
         var id = await userService.GetUserIdByUsername(username);
