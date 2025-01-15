@@ -24,7 +24,7 @@ public class InvoiceController(IMapper mapper, IInvoiceService invoiceService) :
     }
     
     [HttpPatch("update-status/{id}")]
-    [CustomAuthorize("ADMIN, TESTER")]
+    [CustomAuthorize("ADMIN", "TESTER")]
     public async Task<IActionResult> UpdateInvoiceStatus(int id, [FromBody] int statusId)
     {
         await invoiceService.UpdateInvoiceStatus(statusId, id);
