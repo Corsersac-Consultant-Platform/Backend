@@ -31,7 +31,6 @@ public class AuthController(IAuthService authService, IMapper mapper) : Controll
         Response.Cookies.Append("Token", token , 
             new CookieOptions
             {
-                HttpOnly = true, 
                 SameSite = SameSiteMode.Strict, 
                 Secure = true
             });
@@ -51,7 +50,6 @@ public class AuthController(IAuthService authService, IMapper mapper) : Controll
         Response.Cookies.Append("Token", newToken , 
             new CookieOptions
             {
-                HttpOnly = true, 
                 SameSite = SameSiteMode.Strict, 
                 Secure = true
             });
