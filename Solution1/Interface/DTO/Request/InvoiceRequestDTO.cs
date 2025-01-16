@@ -8,5 +8,4 @@ public class InvoiceRequestDTO
     public string Register { get; set; }
     public string Name { get; set; }
     public decimal Amount { get; set; }
-    public int StatusId { get; set; }
 }

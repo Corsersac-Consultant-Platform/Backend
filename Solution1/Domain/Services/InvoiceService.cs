@@ -67,4 +67,9 @@ public class InvoiceService(AppDbContext context, IUnitOfWork unitOfWork, IBusin
         var invoices = await context.Set<Invoice>().Where(invoice => invoice.Serie == serie).ToListAsync();
         return invoices;
     }
+
+    public async Task<bool> InvoiceExistsBySerieAndNumber(string serie, string number)
+    {
+       return await context.Set<Invoice>().AnyAsync( invoice => invoice.Serie == serie && invoice.Number == number);
+    }
 }

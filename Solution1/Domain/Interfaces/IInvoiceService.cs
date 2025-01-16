@@ -10,4 +10,5 @@ public interface IInvoiceService : IBaseRepository<Invoice>
     Task<IEnumerable<Invoice>> GetInvoicesByRange(DateTime start, DateTime end);
     Task<IEnumerable<Invoice>> GetInvoicesByDate(DateTime date);
     Task<IEnumerable<Invoice>> GetInvoicesBySerie(string serie);
+    Task<bool> InvoiceExistsBySerieAndNumber(string serie, string number);
 }

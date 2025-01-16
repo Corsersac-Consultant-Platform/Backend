@@ -58,6 +58,14 @@ public class InvoiceController(IMapper mapper, IInvoiceService invoiceService) :
         return Ok(invoicesResponse);
     }
     
+    [HttpGet("exists")]
+    [CustomAuthorize("ADMIN", "TESTER", "DEFAULT")]
+    public async Task<IActionResult> InvoiceExists([FromQuery] string serie, [FromQuery] string number)
+    {
+        var exists = await invoiceService.InvoiceExistsBySerieAndNumber(serie, number);
+        return Ok(exists);
+    }
+    
     
     
 }

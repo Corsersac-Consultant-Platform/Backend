@@ -26,7 +26,7 @@ public partial class Invoice
         Amount = 0;
     }
     
-    public Invoice(DateTime emitDate, string number, string serie, string register, string name, decimal amount, int statusId)
+    public Invoice(DateTime emitDate, string number, string serie, string register, string name, decimal amount)
     {
         EmitDate = emitDate;
         Number = number;
@@ -34,7 +34,7 @@ public partial class Invoice
         Register = register;
         Name = name;
         Amount = amount;
-        StatusId = statusId;
+        StatusId = 4;
     }
     
     public void UpdateStatus(int statusId)

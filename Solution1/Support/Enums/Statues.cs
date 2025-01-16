@@ -4,5 +4,6 @@ public enum Statues
 {
     Paid,
     Overdue,
-    ToOvercoming
+    ToOvercoming,
+    ToAssign,
 }
