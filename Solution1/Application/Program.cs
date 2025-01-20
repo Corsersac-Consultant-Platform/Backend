@@ -16,7 +16,14 @@ using Security.Services;
 using Support.Utils;
 using AuthenticationMiddleware = Application.Middleware.AuthenticationMiddleware;
 
+
+
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(8080); 
+});
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOriginsPolicy",
@@ -118,6 +125,7 @@ using (var scope = app.Services.CreateScope())
     await seedRolesService.SeedRoles();
     await seedStatuesService.SeedStatues();
 }
+
 
 
 if (app.Environment.IsDevelopment() || app.Environment.IsProduction())

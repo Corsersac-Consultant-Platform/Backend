@@ -1,0 +1,21 @@
+﻿services:
+  application:
+    image: application
+    container_name: corsersac
+    environment:
+      - DB_HOST=host.docker.internal
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=12345678
+      - DB_NAME=corsersacDb
+    build:
+      context: .
+      dockerfile: Application/Dockerfile
+    ports:
+      - "8080:8080"
+    restart: always
+
+networks:
+  external:
+      driver: mysql_driver
+

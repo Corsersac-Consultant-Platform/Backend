@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  application:
+    build:
+      context: "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1"
+      dockerfile: "Application/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Application.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "application:dev"
+    ports: []
+    volumes:
+    - "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1/Application:/app:rw"
+    - "/Users/lordmathi2741/Documents/Corsersac/Backend/Solution1:/src:rw"
+    - "/Users/lordmathi2741/.nuget/packages:/home/app/.nuget/packages"
+    working_dir: "/app"
